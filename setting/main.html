@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <i class="fa fa-arrow-left" id="set" onclick="history.back()"></i>
+        <p id="title" lng-tag="set"></p>
+
+    </header>
+    <div style="display: flex;flex-direction: column;padding: 5%;">
+        <div id="SettingsBody" style="width: 100%;">
+            <div style="display: flex;justify-content: space-evenly;padding: 10px;">
+                <button class="button-49" id = "Light" onclick="localStorage.setItem('Dark', 'false');window.location.reload();" lng-tag="lm"></button>
+                <button class="button-49" id = "Dark" onclick="localStorage.setItem('Dark', 'true');window.location.reload();" lng-tag="dm"></button>
+            </div>
+        </div>
+        <div style="display: flex;flex-direction: column;align-items: center;">
+            <p  lng-tag="pfl" id="pf"></p>
+            
+            <select name="Language" id="lang" id="mySelect" style="margin-top: 4%;" onchange="myFunction()">
+                <option lng-tag="cl"></option>
+                <option value="en">english</option>
+                <option value="ar">عربي</option>
+            </select>
+        </div>
+    </div>
+    <div id="prelod">
+        <img src="../images/logo.png">
+        <p>التطبيق الدولي</p>
+
+        </div>
+    <script src="../js/lang.js"></script>
+    <script src="../js/main.js"></script></body>
+</html>

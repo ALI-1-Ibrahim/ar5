@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://unpkg.com/tesseract.js@v4.0.2/dist/tesseract.min.js'></script>
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+  <header id="header">
+    <i class="fa fa-gear" id="set" onclick="window.location.assign('../setting/main.html')"></i>
+    <p id="title" lng-tag="ts">home</p>
+
+</header>
+<div id="div">
+    <!-- <div id="content" style="height: 25%;width: 25%;padding: 10%;"></div> -->
+    <div class="form__group field">
+        <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+        <label for="name" class="form__label" lng-tag="hint"></label>
+      </div>
+
+    <button class="button-49" style="margin-top: 4%;" onclick="texttospeach()" lng-tag="st"></button>
+    <select id="mySelect" style="margin-top: 2%;" onchange="changelang()">
+        <option value="en">English</option>
+        <option selected value="ar">عربي</option>
+      </select>
+      
+</div>
+
+<div id="prelod">
+  <img src="../images/logo.png">
+  <p>التطبيق الدولي</p>
+
+  </div>
+
+
+<!-- <div class="p-3" style="border: 1px solid gray; height: 300px; border-radius: 8px;">
+    <p id="status" style="display: none;">Listening.... </p>
+  <span id="final" class="text-light"></span>
+  <span id="interim" class="text-secondary"></span>
+</div> -->
+<!-- <button id="start">start</button>
+<button id="stop">stop</button> -->
+<script src="../js/lang.js"></script>
+
+<script src="../js/main.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

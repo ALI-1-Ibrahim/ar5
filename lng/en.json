@@ -1,0 +1,15 @@
+{
+    "main": "home",
+     "ts":"text-to-speech",
+     "is": "Turn picture into speech",
+     "iss":"Picture into words",
+     "ga": "The Gallery",
+     "ca": "camera",
+     "lm":"Light Mode",
+     "dm":"Dark Mode",
+     "pfl":"preferred language",
+     "set":"settings",
+     "st":"play",
+     "cl":"Choose the language",
+     "hint":"Convert text to speech"
+}
